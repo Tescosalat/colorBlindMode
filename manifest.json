@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "ColorBlind Mode",
+    "description": "This extension changes the page colors to black and white for colorblind users.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    },
+    "permissions": [
+      "storage",
+      "declarativeContent",
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
+  
